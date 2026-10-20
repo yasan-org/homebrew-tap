@@ -36,7 +36,7 @@ jobs:
           )
 
           for cask in "${casks[@]}"; do
-            livecheck="$(brew livecheck --cask --newer-only --json "yasanglass/tap/${cask}")"
+            livecheck="$(brew livecheck --cask --newer-only --json "yasan-org/tap/${cask}")"
             version="$(jq -r '.[0].version.latest // empty' <<<"${livecheck}")"
 
             if [[ -z "${version}" ]]; then
@@ -48,7 +48,7 @@ jobs:
             brew bump-cask-pr \
               --write-only \
               --version "${version}" \
-              "yasanglass/tap/${cask}"
+              "yasan-org/tap/${cask}"
             updated=true
           done
 
@@ -58,10 +58,10 @@ jobs:
         if: steps.update.outputs.updated == 'true'
         run: |
           brew test-bot --only-tap-syntax
-          brew style yasanglass/tap/kepko-sample yasanglass/tap/orbit-compose-multiplatform-catalog yasanglass/tap/toolkit-sample
-          brew audit --cask --online yasanglass/tap/kepko-sample yasanglass/tap/orbit-compose-multiplatform-catalog yasanglass/tap/toolkit-sample
-          brew livecheck --cask yasanglass/tap/kepko-sample yasanglass/tap/orbit-compose-multiplatform-catalog yasanglass/tap/toolkit-sample
-          brew fetch --cask yasanglass/tap/kepko-sample yasanglass/tap/orbit-compose-multiplatform-catalog yasanglass/tap/toolkit-sample
+          brew style yasan-org/tap/kepko-sample yasan-org/tap/orbit-compose-multiplatform-catalog yasan-org/tap/toolkit-sample
+          brew audit --cask --online yasan-org/tap/kepko-sample yasan-org/tap/orbit-compose-multiplatform-catalog yasan-org/tap/toolkit-sample
+          brew livecheck --cask yasan-org/tap/kepko-sample yasan-org/tap/orbit-compose-multiplatform-catalog yasan-org/tap/toolkit-sample
+          brew fetch --cask yasan-org/tap/kepko-sample yasan-org/tap/orbit-compose-multiplatform-catalog yasan-org/tap/toolkit-sample
 
       - name: Commit and push updates
         if: steps.update.outputs.updated == 'true'

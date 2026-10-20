@@ -5,7 +5,7 @@ My personal Homebrew Tap.
 ## Add the tap
 
 ```sh
-brew tap yasanglass/tap
+brew tap yasan-org/tap
 ```
 
 ## Remove the tap
@@ -13,7 +13,7 @@ brew tap yasanglass/tap
 Remove the tap when you no longer need it:
 
 ```sh
-brew untap yasanglass/tap
+brew untap yasan-org/tap
 ```
 
 ## Available casks
@@ -21,19 +21,19 @@ brew untap yasanglass/tap
 ### [Orbit Compose Multiplatform Catalog](https://github.com/yasan-org/orbit-compose-multiplatform)
 
 ```sh
-brew install --cask yasanglass/tap/orbit-compose-multiplatform-catalog
+brew install --cask yasan-org/tap/orbit-compose-multiplatform-catalog
 ```
 
 ### [Kepko sample app](https://github.com/yasan-org/kepko)
 
 ```sh
-brew install --cask yasanglass/tap/kepko-sample
+brew install --cask yasan-org/tap/kepko-sample
 ```
 
 ### [Toolkit sample app](https://github.com/yasan-org/toolkit)
 
 ```sh
-brew install --cask yasanglass/tap/toolkit-sample
+brew install --cask yasan-org/tap/toolkit-sample
 ```
 
 ## First launch
