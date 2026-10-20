@@ -2,10 +2,10 @@ cask "orbit-compose-multiplatform-catalog" do
   version "0.40.3"
   sha256 "2b6d80585eddaf51757c4a2d75286da4083232145eed3e484d4c1a3c884d3658"
 
-  url "https://github.com/yasanglass/orbit-compose-multiplatform/releases/download/#{version}/orbit-catalog-macos-#{version}.dmg"
+  url "https://github.com/yasan-org/orbit-compose-multiplatform/releases/download/#{version}/orbit-catalog-macos-#{version}.dmg"
   name "Orbit Compose Multiplatform Catalog"
   desc "Browse Orbit components for Compose Multiplatform"
-  homepage "https://github.com/yasanglass/orbit-compose-multiplatform"
+  homepage "https://github.com/yasan-org/orbit-compose-multiplatform"
 
   livecheck do
     url :url

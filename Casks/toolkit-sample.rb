@@ -2,10 +2,10 @@ cask "toolkit-sample" do
   version "1.7.20"
   sha256 "05d5544b1b208878728aa4e8a319415549c3bbcbf6cc4a60fdb3a7d42a3e1c35"
 
-  url "https://github.com/yasanglass/toolkit/releases/download/#{version}/toolkit-sample-macos-#{version}.dmg"
+  url "https://github.com/yasan-org/toolkit/releases/download/#{version}/toolkit-sample-macos-#{version}.dmg"
   name "Toolkit"
   desc "Explore the Toolkit libraries for Kotlin Multiplatform"
-  homepage "https://github.com/yasanglass/toolkit"
+  homepage "https://github.com/yasan-org/toolkit"
 
   livecheck do
     url :url

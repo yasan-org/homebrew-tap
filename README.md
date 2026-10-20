@@ -18,19 +18,19 @@ brew untap yasanglass/tap
 
 ## Available casks
 
-### [Orbit Compose Multiplatform Catalog](https://github.com/yasanglass/orbit-compose-multiplatform)
+### [Orbit Compose Multiplatform Catalog](https://github.com/yasan-org/orbit-compose-multiplatform)
 
 ```sh
 brew install --cask yasanglass/tap/orbit-compose-multiplatform-catalog
 ```
 
-### [Kepko sample app](https://github.com/yasanglass/kepko)
+### [Kepko sample app](https://github.com/yasan-org/kepko)
 
 ```sh
 brew install --cask yasanglass/tap/kepko-sample
 ```
 
-### [Toolkit sample app](https://github.com/yasanglass/toolkit)
+### [Toolkit sample app](https://github.com/yasan-org/toolkit)
 
 ```sh
 brew install --cask yasanglass/tap/toolkit-sample
