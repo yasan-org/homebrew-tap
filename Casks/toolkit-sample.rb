@@ -1,6 +1,6 @@
 cask "toolkit-sample" do
-  version "1.7.21"
-  sha256 "438097c82ae39b416cb0fe1c2d7be7ee79f321b2a8b2a23bbbb952104014923d"
+  version "1.7.22"
+  sha256 "51037c8ff74919b4d589aa8e19a3229cfb0d587be77e99942f98a34846dbdbfb"
 
   url "https://github.com/yasan-org/toolkit/releases/download/#{version}/toolkit-sample-macos-#{version}.dmg"
   name "Toolkit"

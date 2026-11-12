@@ -1,6 +1,6 @@
 cask "kepko-sample" do
-  version "1.8.1"
-  sha256 "c878ce9cc4efab57f0eac100ea7e840d7ce7215d1e99211b9abe5de5fbd87ce9"
+  version "1.8.2"
+  sha256 "5ea8000e7e038358313a1119b944584396d96b21b9ebad62480dda83ea26729e"
 
   url "https://github.com/yasan-org/kepko/releases/download/#{version}/kepko-sample-macos-#{version}.dmg"
   name "Kepko"
