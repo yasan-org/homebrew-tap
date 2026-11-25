@@ -62,6 +62,7 @@ jobs:
           brew audit --cask --online yasan-org/tap/kepko-sample yasan-org/tap/orbit-compose-multiplatform-catalog yasan-org/tap/toolkit-sample
           brew livecheck --cask yasan-org/tap/kepko-sample yasan-org/tap/orbit-compose-multiplatform-catalog yasan-org/tap/toolkit-sample
           brew fetch --cask yasan-org/tap/kepko-sample yasan-org/tap/orbit-compose-multiplatform-catalog yasan-org/tap/toolkit-sample
+          brew fetch --cask --os linux --arch intel yasan-org/tap/kepko-sample yasan-org/tap/toolkit-sample
 
       - name: Commit and push updates
         if: steps.update.outputs.updated == 'true'

@@ -33,3 +33,23 @@ jobs:
 
       - name: Verify artifact checksum
         run: brew fetch --cask yasan-org/tap/kepko-sample yasan-org/tap/orbit-compose-multiplatform-catalog yasan-org/tap/toolkit-sample
+
+      - name: Verify Linux artifact checksum
+        run: brew fetch --cask --os linux --arch intel yasan-org/tap/kepko-sample yasan-org/tap/toolkit-sample
+
+  test-linux:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Homebrew
+        id: set-up-homebrew
+        uses: Homebrew/actions/setup-homebrew@1f8e202ffddf94def7f42f6fa3a482e821489f9c # 2026.07.10.1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install casks
+        run: brew install --cask yasan-org/tap/kepko-sample yasan-org/tap/toolkit-sample
+
+      - name: Check installed launchers
+        run: |
+          test -x "$(brew --prefix)/bin/kepko-sample"
+          test -x "$(brew --prefix)/bin/toolkit-sample"
