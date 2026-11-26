@@ -1,6 +1,6 @@
 cask "orbit-compose-multiplatform-catalog" do
-  version "0.40.3"
-  sha256 "2b6d80585eddaf51757c4a2d75286da4083232145eed3e484d4c1a3c884d3658"
+  version "0.40.4"
+  sha256 "b5d001f551f31612942e892c58558c9aaab29e4541badd1bd47ae8d3768c7a3b"
 
   url "https://github.com/yasan-org/orbit-compose-multiplatform/releases/download/#{version}/orbit-catalog-macos-#{version}.dmg"
   name "Orbit Compose Multiplatform Catalog"
